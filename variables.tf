@@ -59,6 +59,24 @@ variable "key_name" {
   type        = string
 }
 
+variable "timeout_create" {
+  description = "How long to wait for the EKS Node Group to be create. Default 60 minutes."
+  type        = string
+  default     = "60m"
+}
+
+variable "timeout_update" {
+  description = "How long to wait for the EKS Node Group to be updated. Default 60 minutes."
+  type        = string
+  default     = "60m"
+}
+
+variable "timeout_delete" {
+  description = "How long to wait for the EKS Node Group to be deleted. Default 60 minutes."
+  type        = string
+  default     = "30m"
+}
+
 variable "env" {
   description = "Environment"
   type        = string

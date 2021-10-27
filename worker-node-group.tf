@@ -22,9 +22,9 @@ resource "aws_eks_node_group" "worker-nodes" {
   }
 
   timeouts {
-    create = "30m"
-    update = "30m"
-    delete = "20m"
+    create = var.timeout_create
+    update = var.timeout_update
+    delete = var.timeout_delete
   }
 
   depends_on = [
