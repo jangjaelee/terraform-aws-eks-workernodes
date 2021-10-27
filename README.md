@@ -32,6 +32,10 @@ module "eks_worker_nodes" {
   scaling_min_size     = 4
   scaling_max_size     = 8
 
+  timeout_create = "60m"
+  timeout_update = "60m"
+  timeout_delete = "30m"
+
   env = "dev"
 }
 ```
