@@ -5,6 +5,8 @@ resource "aws_eks_node_group" "worker-nodes" {
   subnet_ids      = data.aws_subnet_ids.this.ids
 
   ami_type        = var.ami_type
+  disk_size       = var.disk_size
+  capacity_type   = var.capacity_type
   instance_types  = var.instance_types
 
 
