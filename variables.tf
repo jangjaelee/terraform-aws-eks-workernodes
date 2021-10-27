@@ -29,6 +29,7 @@ variable "disk_size" {
   description = "Disk size in GiB for worker nodes"
   type        = number
   default     = 20
+}
 
 variable "instance_types" {
   description = "Set of instance types associated with the EKS Node Group"
