@@ -24,6 +24,7 @@ module "eks_worker_nodes" {
   node_group_name = "${local.cluster_name}_Worker_Nodes_Group_1"
   
   instance_types  = ["t3.2xlarge"]
+  ami_type        = "AL2_x86_64"  # AL2_x86_64_GPU, AL2_ARM_64, CUSTOM
   
   scaling_desired_size = 4
   scaling_min_size     = 4
