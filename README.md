@@ -1,4 +1,4 @@
-# AWS EKS Node Group Terraform module
+# Amazon EKS Node Group Terraform module
 
 Terraform module which creates EKS Node Group resources on AWS.
 
